@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+:root {
+  /* TODO: Change RGB colors to HEX coded colors instead. */
+  --main-border-color: rgb(230, 236, 240);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-size: 13px;
+  margin: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.application {
   align-items: center;
+  display: flex;
+  height: 100vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0px;
+  width: 100vw;
 }
 
-.App-link {
-  color: #61dafb;
+.left, .right {
+  height: 100%;
+  width: 350px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main {
+  border-width: 0px 1px;
+  border-style: solid;
+  border-color: var(--main-border-color);
+  height: 100%;
+  width: 600px;
 }
+
+.option {
+  border-bottom: 1px solid var(--main-border-color);
+  padding: 8px;
+  width: 100%;
+  height: fit-content;
+}
+
+.right {
+  border-right: 1px solid var(--main-border-color);
+}
+
